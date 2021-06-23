@@ -1,0 +1,119 @@
+:root {
+  --blue: #0F2A9C; /* use with white */
+  --rose: #A07178; /* use with white */
+  --champagnepink: #E6CCBE; /* use with black */
+  --sage: #C8CC92; /* use with black */
+  --seaweed: #087E8B; /* use with white */
+}
+
+body {
+  background-color: #E7DCF2;
+  padding: 1em 0;
+  margin: 0;
+  font: 100%/1.5 "IBM Plex Sans", sans-serif;
+}
+
+@media (min-width: 60em) {
+  body {
+    font-size: 120%;
+    display: grid;
+    grid-template-columns: [full-width-start] auto [content-start] 5em [content-main-start] repeat(8, 5em) [content-main-end content-end] auto [full-width-end];
+  }
+}
+
+.logo {
+  max-width: 2.5em;
+  margin: 0 auto -.75em auto;
+}
+@media (min-width: 60em) {
+  .logo {
+    max-width: 5em;
+    grid-column: 2 / 4;
+    grid-row: 1;
+    margin: 0;
+    z-index: 1;
+  }
+}
+
+nav {
+  grid-column: full-width;
+  grid-row: 1;
+  align-self: end;
+  margin-top: -1em;
+  background-color: var(--seaweed);
+  color: white;
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
+  nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+@media (min-width: 60em) {
+  nav {
+    justify-content: end;
+  }
+}
+
+.tagline {
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 auto;
+  color: var(--blue);
+  max-width: 16em;
+  text-align: center;
+}
+@media (min-width: 60em) {
+  .tagline {
+    font-size: 2.5em;
+    grid-column: content;
+    padding: 0;
+    margin: 1em 0;
+    text-align: left;
+  }
+}
+
+main {
+  grid-column: content-main;
+}
+  main section {
+    background: white;
+    color: #333;
+    padding: 1em 1.25em; 
+    margin: 0 auto;
+    max-width: 40em;
+    box-shadow: 1px 1px 10px -6px #000; 
+  }
+  main section + section {
+    margin-top: 2em;
+  }
+@media (min-width: 60em) {
+  main section {
+    max-width: none;
+    margin: 0;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 2em;
+  font-weight: 600;
+  color: black;
+}
+h2:first-child {
+  margin-top: 0;
+}
+
+h3 {
+  margin: 1.5em 0 0.25em;
+  color: var(--rose);
+}
+summary h3 {
+  display: inline;
+}
