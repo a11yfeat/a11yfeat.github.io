@@ -91,11 +91,12 @@ nav {
   text-align: center;
   color: #fff;
 }
+
 @media (min-width: 60em) {
   .tagline {
-    font-size: 2em;
-    grid-column: 1 / 8;
+    grid-column: 1 / 6;
     padding: 0;
+    font-size: 1.5em;
     margin: 0;
     text-align: left;
     font-family: Baloo;
@@ -107,9 +108,14 @@ nav {
     padding-left: 2.5em;
   }
 }
+@media (min-width: 75em) {
+  .tagline {
+    font-size: 2em;
+    grid-column: 1 / 8;
+  }
+}
 
 main {
-  grid-column: 8 / 15;
 }
   main section {
     background:#fbfbfb;
@@ -122,20 +128,28 @@ main {
   main section + section {
     margin-top: 2em;
   }
-@media (min-width: 60em) {
-  main section {
-    max-width: none;
-    margin: 0;
+  @media (min-width: 60em) {
+    main {
+      grid-column: 6 / 15;
+    }
   }
-  main a {
-    color: var(--blue);
-    text-decoration-thickness: 3px;
-    transition: text-decoration-thickness 0.1s;
+  @media (min-width: 75em) {
+    main {
+      grid-column: 8 / 15;
+    }
+    main section {
+      max-width: none;
+      margin: 0;
+    }
+    main a {
+      color: var(--blue);
+      text-decoration-thickness: 3px;
+      transition: text-decoration-thickness 0.1s;
+    }
+    main a:hover {
+      text-decoration-thickness: 5px;
+    }
   }
-  main a:hover {
-    text-decoration-thickness: 5px;
-  }
-}
 
 dt {
   font-weight: bold;
