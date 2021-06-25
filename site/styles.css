@@ -57,7 +57,6 @@ nav {
   color: white;
   padding: 1em;
   display: flex;
-  gap: 1em;
   justify-content: center;
 }
   nav a {
@@ -66,9 +65,13 @@ nav {
     border-radius: 3px;
     text-decoration: none;
     transition: background-color 0.2s;
+    position: relative;
   }
   nav a:hover {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+  nav a:not(:first-child) {
+    margin-left: 1em;
   }
   nav a:not(:first-child)::before {
     content: '・';
@@ -77,7 +80,7 @@ nav {
   }
 @media (min-width: 60em) {
   nav {
-    justify-content: end;
+    justify-content: flex-end;
   }
 }
 
