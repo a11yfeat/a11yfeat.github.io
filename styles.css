@@ -103,7 +103,7 @@ nav {
     font-size: 1.5em;
     margin: 0;
     text-align: left;
-    font-family: "Baloo", sans-serif;
+    font-family: "Baloo 2", sans-serif;
     line-height: 1.1;
     padding: 1.25em 1.75em;
     background: var(--seaweed);
@@ -162,7 +162,7 @@ h2 {
   margin-top: 2em;
   font-weight: 600;
   color: black;
-  font-family: "Baloo", sans-serif;
+  font-family: "Baloo 2", sans-serif;
   font-size: 2em;
   margin-bottom: 0;
 }
