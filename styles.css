@@ -1,7 +1,28 @@
 :root {
-  --blue: #0F2A9C; /* use with white */
+  --blue: #0f2a9c; /* use with white */
   --seaweed: #187e9d; /* use with white */
   --purple: #442860; /* use with white*/
+}
+
+@font-face {
+  font-family: "Baloo 2";
+  src: url("fonts/baloo2.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recursive";
+  src: url("fonts/recursive-medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Recursive";
+  src: url("fonts/recursive-bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
 }
 
 html {
@@ -19,7 +40,9 @@ body {
   body {
     font-size: 120%;
     display: grid;
-    grid-template-columns: [full-width-start] repeat(auto-fill, minmax(5em, auto)) [full-width-end];
+    grid-template-columns:
+      [full-width-start] repeat(auto-fill, minmax(5em, auto))
+      [full-width-end];
   }
 }
 
@@ -57,17 +80,17 @@ nav {
   justify-content: center;
   flex-direction: column;
 }
-  nav a {
-    color: inherit;
-    border-radius: 3px;
-    text-decoration: none;
-    transition: background-color 0.2s;
-    position: relative;
-    padding: 0.5em 1em;
-  }
-  nav a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+nav a {
+  color: inherit;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  position: relative;
+  padding: 0.5em 1em;
+}
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
 @media (min-width: 60em) {
   nav {
     justify-content: flex-end;
@@ -80,7 +103,7 @@ nav {
     margin-left: 1em;
   }
   nav a:not(:first-child)::before {
-    content: '・';
+    content: "・";
     position: absolute;
     left: -1em;
   }
@@ -89,7 +112,7 @@ nav {
 .tagline {
   padding: 1em;
   font-size: 1.5em;
-  font-weight: bold;
+  font-family: "Baloo 2", sans-serif;
   margin: 0 auto;
   color: var(--blue);
   max-width: 16em;
@@ -120,39 +143,39 @@ nav {
 
 main {
 }
+main section {
+  background: #fbfbfb;
+  color: #333;
+  padding: 2em;
+  margin: 0 auto;
+  max-width: 40em;
+  box-shadow: 1px 1px 10px -6px #000;
+}
+main section + section {
+  margin-top: 2em;
+}
+@media (min-width: 60em) {
+  main {
+    grid-column: 6 / 15;
+  }
+}
+@media (min-width: 75em) {
+  main {
+    grid-column: 8 / 15;
+  }
   main section {
-    background:#fbfbfb;
-    color: #333;
-    padding: 2em; 
-    margin: 0 auto;
-    max-width: 40em;
-    box-shadow: 1px 1px 10px -6px #000; 
+    max-width: none;
+    margin: 0;
   }
-  main section + section {
-    margin-top: 2em;
+  main a {
+    color: var(--blue);
+    text-decoration-thickness: 3px;
+    transition: text-decoration-thickness 0.1s;
   }
-  @media (min-width: 60em) {
-    main {
-      grid-column: 6 / 15;
-    }
+  main a:hover {
+    text-decoration-thickness: 5px;
   }
-  @media (min-width: 75em) {
-    main {
-      grid-column: 8 / 15;
-    }
-    main section {
-      max-width: none;
-      margin: 0;
-    }
-    main a {
-      color: var(--blue);
-      text-decoration-thickness: 3px;
-      transition: text-decoration-thickness 0.1s;
-    }
-    main a:hover {
-      text-decoration-thickness: 5px;
-    }
-  }
+}
 
 dt {
   font-weight: bold;
@@ -176,7 +199,7 @@ h3 {
   font-weight: 400;
 }
 h3 + p {
-  margin-top: .25em;
+  margin-top: 0.25em;
 }
 summary h3 {
   display: inline;
@@ -208,7 +231,7 @@ summary h3 {
   font-size: 80%;
   display: block;
   color: #187e9d;
-  margin: .25em 0;
+  margin: 0.25em 0;
 }
 
 .todos li {
@@ -216,7 +239,7 @@ summary h3 {
   position: relative;
 }
 .todos li::before {
-  content: '';
+  content: "";
   display: block;
   width: 1em;
   height: 1em;
@@ -225,5 +248,5 @@ summary h3 {
   left: 0;
   top: 0;
   margin-left: -1.75em;
-  margin-top: .25em;
+  margin-top: 0.25em;
 }
