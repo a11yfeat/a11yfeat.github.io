@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Accessibility Features Community Group &ndash; 23 June 2021</title>
+<meta name=viewport content="width=device-width">
+<link rel="stylesheet" type="text/css" title="2018" href="https://www.w3.org/StyleSheets/scribe2/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/base.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/2004/02/minutes-style.css">
+<link rel="alternate stylesheet" type="text/css" title="Fancy" href="https://www.w3.org/StyleSheets/scribe2/fancy.css">
+<link rel="alternate stylesheet" type="text/css" title="Typewriter" href="https://www.w3.org/StyleSheets/scribe2/tt-member.css">
+</head>
+
+<body>
+<header>
+<p><a href="https://www.w3.org/"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt=W3C border=0 height=48 width=72></a></p>
+
+<h1>Accessibility Features Community Group</h1>
+<h2>23 June 2021</h2>
+
+<nav id=links>
+<a href="https://www.w3.org/2021/06/23-a11yfeat-irc"><img alt="IRC log." title="IRC log" src="https://www.w3.org/StyleSheets/scribe2/text-plain.png"></a>
+</nav>
+</header>
+
+<div id=prelims>
+<div id=attendees>
+<h2>Attendees</h2>
+<dl class=intro>
+<dt>Present</dt><dd>Kilian Valkhof, Nathan Loding, Joschi Kuphal, James, Cris Cairns, Marcus Herrmann, Jules Ernst, Kristie Nicol, Eric Eggert (yatil), Hidde de Vries (hdv), Wilco Fiers</dd>
+<dt>Regrets</dt><dd>-</dd>
+<dt>Chair</dt><dd>yatil</dd>
+<dt>Scribe</dt><dd>hdv</dd>
+</dl>
+</div>
+
+<nav id=toc>
+<h2>Contents</h2>
+<ol>
+<li><a href="#t00">Introductions</a></li>
+<li><a href="#t01">Finalizing the mission statement</a></li>
+<li><a href="#t02">Finding a regular meeting time</a></li>
+<li><a href="#t03">Initial activities</a></li>
+<li><a href="#t04">Tools to use in the CG</a></li>
+<li class=app><a href="#ResolutionSummary">Summary of resolutions</a></li>
+</ol>
+</nav>
+</div>
+
+<main id=meeting class=meeting>
+<h2>Meeting minutes</h2>
+<section>
+<h3 id=t00>Introductions</h3>
+<p id=x025 class="phone s01"><cite>yatil:</cite> The goal of this group is to make accessibility work not just at the point of content creation, but also at the point of where the user views content</p>
+<p id=x026 class="phone s01"><cite>yatil:</cite> I think we should go around the room for introductions</p>
+<p id=x042 class="phone s01"><cite>yatil:</cite> thanks everyone for introductions, this is a great group! Let's get started</p>
+</section>
+
+<section>
+<h3 id=t01>Finalizing the mission statement</h3>
+<p id=x045 class=irc><cite>&lt;yatil&gt;</cite> <a href="https://www.w3.org/community/a11yfeat/2021/06/10/call-for-participation-in-accessibility-features-community-group/">https://<wbr>www.w3.org/<wbr>community/<wbr>a11yfeat/<wbr>2021/<wbr>06/<wbr>10/<wbr>call-for-participation-in-accessibility-features-community-group/</a></p>
+<p id=x046 class="phone s01"><cite>yatil:</cite> the four paragraphs on that web page and the list of different types of features is what Wilco, Hidde and I talked about earlier</p>
+<p id=x047 class=summary>[reads out the page]</p>
+<p id=x048 class="phone s01"><cite>yatil:</cite> is everyone with this mission statement, do people have any comments? we would like to have consensus that this is something we all want to be working on</p>
+<p id=x049 class="phone s02"><cite>Wilco:</cite> do people feel like there is anything missing from the statement?</p>
+<p id=x050 class="phone s03"><cite>marcus:</cite> Maybe in the second paragraph it needs an example? after 'challenges unique to their content', I would expect a 'for example'</p>
+<p id=x051 class="phone s01"><cite>yatil:</cite> makes … our idea was that instead of fixing contrast issues, you could focus on writing alternative text, because that is something especially unique to your content</p>
+<p id=x053 class=irc><cite>&lt;Wilco&gt;</cite> hdv: I wonder if we want to highlight a lot of that.</p>
+<p id=x054 class=irc><cite>&lt;Wilco&gt;</cite> ... We don't want to inspire people to stop certain types of accessibility work</p>
+<p id=x057 class="phone s01"><cite>yatil:</cite> yup that's one of the things we talked about… we don't want to stop people doing accessibility work, this is about users getting features they need</p>
+<p id=x059 class="phone s01"><cite>yatil:</cite> the goal is to give features to people who have needs</p>
+<p id=x060 class="phone s02"><cite>Wilco:</cite> for me,  I would not mind if certain accessibility problems would not be addressed… let's see if we can make some of these things easier. If we can tell authors not to worry about focus, because the user agent ensures that, that would be fantastic</p>
+<p id=x061 class="phone s01"><cite>yatil:</cite> I agree, but don't want to start from that point</p>
+<p id=x062 class="phone s02"><cite>Wilco:</cite> that's fair</p>
+<p id=x064 class="phone s01"><cite>yatil:</cite> the features we're thinking about its… what is the kind of thing a browser of operating system _could_ take on</p>
+<p id=x065 class="phone s01"><cite>yatil:</cite> if we fix it in the browser, we can fix it once and for everyone, rather than relying on every website to fix</p>
+<p id=x067 class=phone><cite>hdv:</cite> I'm also thinking of features like video player added to the browser.</p>
+<p id=x070 class=phone>... At that point you don't need to build your own. Components in the browser that you can trust is a good idea.</p>
+<p id=x071 class="phone s01"><cite>yatil:</cite> this will come out of our work probably… we'll get an idea of the kinds of things that work</p>
+<p id=x072 class="phone s02"><cite>Wilco:</cite> may be good to officially accept the mission statement? I'll do a proposed resolution</p>
+<p id=x073 class=irc><strong>Proposed resolution:</strong> Accepted the mission statement as written</p>
+<p id=x074 class=irc><cite>&lt;kilianvalkhof&gt;</cite> +1</p>
+<p id=x075 class=irc><cite>&lt;jkphl&gt;</cite> +1</p>
+<p id=x076 class=irc><cite>&lt;hdv&gt;</cite> +1</p>
+<p id=x077 class=irc><cite>&lt;James&gt;</cite> +1</p>
+<p id=x078 class=irc><cite>&lt;nloding&gt;</cite> +1</p>
+<p id=x079 class=irc><cite>&lt;ccairns&gt;</cite> +1</p>
+<p id=x080 class=irc><cite>&lt;marcus&gt;</cite> +1</p>
+<p id=x081 class=irc><cite>&lt;yatil&gt;</cite> +1</p>
+<p id=x082 class=irc><cite>&lt;Wilco&gt;</cite> +1</p>
+<p id=x083 class=irc><cite>&lt;jules_&gt;</cite> +1</p>
+<p id=x084 class=irc><cite>&lt;yatil&gt;</cite> kristie +1</p>
+<p id=r01 class=resolution><strong>Resolution:</strong> Accepted the mission statement as written</p>
+</section>
+
+<section>
+<h3 id=t02>Finding a regular meeting time</h3>
+<p id=x093 class="phone s01"><cite>yatil:</cite> we thought about biweekly… not twice a week… every other week</p>
+<p id=x094 class="phone s01"><cite>yatil:</cite> probably around this timeslot</p>
+<p id=x095 class=irc><cite>&lt;kilianvalkhof&gt;</cite> thursdays at 4 would work for me too</p>
+<p id=x096 class="phone s01"><cite>yatil:</cite> let's meet again in two weeks, Thursday at 5, I'll also send a Doodle</p>
+<p id=x097 class="phone s01"><cite>yatil:</cite> (that's 5, my time, so the same time as today)</p>
+</section>
+
+<section>
+<h3 id=t03>Initial activities</h3>
+<p id=x100 class="phone s01"><cite>yatil:</cite> Wilco, Hidde and I talked a bit about the first deliverables we could do</p>
+<p id=x101 class="phone s01"><cite>yatil:</cite> one of the things we need to do is to have a catalog of accessibility features</p>
+<p id=x102 class="phone s01"><cite>yatil:</cite> that way we could also have a matrix of features and which browsers support them</p>
+<p id=x103 class="phone s01"><cite>yatil:</cite> the second step would be to see what we can use the data for. One of the things that the W3C WAI website has, is a page that explains how to resize text</p>
+<p id=x104 class="irc"><a href="https://www.w3.org/WAI/meta/customize/">https://www.w3.org/WAI/meta/customize/</a></p>
+<p id=x105 class=irc><cite>&lt;Wilco&gt;</cite> <a href="https://caniuse.com/">https://<wbr>caniuse.com/</a> &quot;can i use database&quot; in case you're not familiar</p>
+<p id=x106 class="phone s01"><cite>yatil:</cite> so one thing that we can do is to create web pages for users that explain how to use accessibility features… something else could be some sort of caniuse-like interface</p>
+<p id=x107 class="phone s01"><cite>yatil:</cite> any comments on that?</p>
+<p id=x110 class="phone s05"><cite>kilianvalkhof:</cite> given this already exists, how much of what we do would be replicating? can't we link to these resources that are already available?</p>
+<p id=x111 class="phone s01"><cite>yatil:</cite> that's a good question… caniuse is not really about accessibility features, more about HTML/CSS/JS features. And some of the other resources are a little out of date</p>
+<p id=x112 class="phone s01"><cite>yatil:</cite> so we think we'll be catalogueing things that caniuse doesn't have. One example is a thing Safari has, that you can set a minimum font size, no other browser does, and it is not in caniuse</p>
+<p id=x113 class="phone s05"><cite>kilianvalkhof:</cite> could we update that W3C/WAI page?</p>
+<p id=x114 class="phone s06"><cite>hdv:</cite> may be tricky to convince the owners, and that page is only about one feature</p>
+<p id=x115 class="phone s01"><cite>yatil:</cite> yes but they may be able to benefit from that work</p>
+<p id=x116 class="phone s01"><cite>yatil:</cite> other comments? I don't want to prescribe what we do… </p>
+<p id=x117 class="phone s01"><cite>yatil:</cite> we could also do what kilianvalkhof does and develop plugins?</p>
+<p id=x118 class="phone s02"><cite>Wilco:</cite> one other idea that we pitched was to set up a survey and start collecting information on what kinds of features people are looking for / would like to see us focus on?</p>
+<p id=x119 class="phone s02"><cite>Wilco:</cite> in that case we'll probably also want to create a website and we'd need people ot do that… </p>
+<p id=x120 class="phone s01"><cite>yatil:</cite> yes so something like 'what kind of accessibility features do you use? which features would you wish to exist?' would help us to identify gaps between browsers, operating systems, etc. It may often be the case that people don't know about certain features</p>
+<p id=x121 class="phone s01"><cite>yatil:</cite> this could also be work that's happening in two different paths… one collecting data in the survey, the other doing something with that data</p>
+<p id=x123 class="phone s03"><cite>marcus:</cite> it sounds like the first phase may be like a brainstorming phase? and the second to cluster those etc</p>
+<p id=x124 class="phone s01"><cite>yatil:</cite> yes… but we'll be following, very loosely, the W3C process, so we want to show what we are doing and why, to help us maintain credibility. So we want to do the research, and then the ideas.</p>
+<p id=x125 class="phone s01"><cite>yatil:</cite> a regular W3C Working Group expects people to work ~ 4 hours per week… I don't expect people to put in that much time in for this Community Group (of course you would be welcome to)… we want to make slow but steady progress</p>
+<p id=x126 class="phone s01"><cite>yatil:</cite> so the first thing to do for the next few weeks is to set up asynchronously</p>
+<p id=x128 class="phone s05"><cite>kilianvalkhof:</cite> have we had interest from browser vendors?</p>
+<p id=x129 class="phone s05"><cite>kilianvalkhof:</cite> they already have a lot of docs of their own, like the Edge team documented a lot</p>
+<p id=x131 class="phone s01"><cite>yatil:</cite> yes! we talked to folks, but no strong commitments just yet</p>
+<p id=x132 class="phone s01"><cite>yatil:</cite> we should always link to documentation when it is available</p>
+<p id=x133 class="phone s02"><cite>Wilco:</cite> part of this is also to create visibility for this work… the more work we do the more visibility we create… the more engagement we're likely to create</p>
+<p id=x137 class="phone s07"><cite>ccairns:</cite> interesting to look at the browsers and what already exists… so maybe we also need a list of things that crop up when we make websites, as developers… so what are things that are tough to create for developers and people would reach for a plugin</p>
+<p id=x138 class="phone s01"><cite>yatil:</cite> we probably all have lists of, like, the 7 things that are broken on every website kind of thing… definitely a good way to find things that we would want to try and look at for this work</p>
+<p id=x139 class="phone s01"><cite>yatil:</cite> would be good to, when we collect them, consider what are the user needs</p>
+<p id=x140 class=irc><cite>&lt;Wilco&gt;</cite> +1</p>
+</section>
+
+<section>
+<h3 id=t04>Tools to use in the CG</h3>
+<p id=x143 class="phone s01"><cite>yatil:</cite> we have the Slack channel for communication, that seems to be the one that works best for most people, I'd like to keep using that if that's ok for people</p>
+<p id=x145 class="phone s03"><cite>marcus:</cite> it looks like for Slack you need a @w3.org address</p>
+<p id=x146 class="phone s01"><cite>yatil:</cite> I should be able to invite you</p>
+<p id=x147 class=irc><cite>&lt;Wilco&gt;</cite> example /me my e-mail</p>
+<p id=x148 class="phone s01"><cite>yatil:</cite> I will invite everyone to Slack, if you can't access let me know and I'll invite you</p>
+<p id=x149 class="phone s01"><cite>yatil:</cite> for ease of use reasons, I propose using Google services for collaborative document editing</p>
+<p id=x150 class="phone s01"><cite>yatil:</cite> I see no -1's to that at this time</p>
+<p id=x151 class=irc><cite>&lt;Wilco&gt;</cite> <a href="https://github.com/a11yfeat">https://<wbr>github.com/<wbr>a11yfeat</a></p>
+<p id=x152 class="phone s01"><cite>yatil:</cite> we'd also like to use GitHub for this work, we've created an organisation for it</p>
+<p id=x153 class="phone s01"><cite>yatil:</cite> if we create code, prototypes, maybe a website, we could do that work there</p>
+<p id=x154 class="phone s01"><cite>yatil:</cite> this is a separate organisation from the w3c organisation, because it gives us a little more administrative options</p>
+<p id=x155 class="phone s01"><cite>yatil:</cite> I don't expect us to be doing a lot there for the next couple of days</p>
+<p id=x156 class="phone s01"><cite>yatil:</cite> I don't see anyone shaking their heads or fists, so that's good</p>
+<p id=x157 class="phone s02"><cite>Wilco:</cite> maybe we go around the room to ask how the meeting was, if anyone wants to add anything for today</p>
+<p id=x158 class="phone s03"><cite>marcus:</cite> no comments, it was my first time in W3C space and I liked how structured it was</p>
+<p id=x159 class="phone s08"><cite>jules_:</cite> no comments  thanks!</p>
+<p id=x160 class="phone s05"><cite>kilianvalkhof:</cite> no remarks from me</p>
+<p id=x161 class="phone s07"><cite>ccairns:</cite> nothing from me</p>
+<p id=x162 class="phone s09"><cite>kristie:</cite> all good</p>
+<p id=x163 class="phone s10"><cite>jkphl:</cite> same for me as for Marcus, no remarks, overwhelmed.</p>
+<p id=x164 class=summary>nloding the IRC bot for the minutes is super cool</p>
+<p id=x165 class="phone s06"><cite>hdv:</cite> no remarks, thanks everyone for showing up, great to see the turnout</p>
+<p id=x166 class=summary>RRSAgent make minutes</p>
+</section>
+</main>
+
+<div id=ResolutionSummary>
+<h2>Summary of resolutions</h2>
+<ol>
+<li><a href="#r01">Accepted the mission statement as written</a></li>
+</ol>
+</div>
+
+
+<address>Minutes manually created (not a transcript), formatted by <a
+href="https://w3c.github.io/scribe2/scribedoc.html"
+>scribe.perl</a> version 136 (Thu May 27 13:50:24 2021 UTC).</address>
+</body>
+</html>
